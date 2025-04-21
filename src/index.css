@@ -1,0 +1,14 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal custom styles */
+body {
+  @apply bg-gray-100 min-h-screen; /* Replaces manual background color */
+}
+
+/* Your custom input class */
+.input {
+  @apply border p-2 rounded w-full text-black bg-white;
+}
