@@ -28,7 +28,7 @@ export default function JobForm({ onAddJob }) {
 
     const handleAnalyze = async () => {
         try {
-            const res = await fetch("https://smart-job-tracker-kth8.onrender.com/api/analyze", {
+            const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/analyze`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ jobDescription: form.jobDescription }),
